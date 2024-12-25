@@ -1,0 +1,110 @@
+body {
+    display: block;
+    background: url(../img/baixados\ \(2\)\ 1.png) black no-repeat fixed;
+    background-size: cover;
+    background-blend-mode: luminosity;
+}
+
+.chronimes1, .chronimes2, .chronimes3 {
+    display: block;
+    position: absolute; 
+    left: 0; 
+    right: 0;
+    margin: 0 auto;
+}
+
+.chronimes1 {
+    top: 212px; 
+    z-index: 3; 
+}
+
+.chronimes2 {
+    top: 203px;
+    z-index: 2;
+}
+
+.chronimes3 {
+    top: 194px; 
+    z-index: 1;
+}
+
+.chronimes1 h1, .chronimes2 h1, .chronimes3 h1 {
+    font-family: 'League Spartan', system-ui;
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+.chronimes1 h1 {
+    color: white;
+}
+
+.chronimes2 h1 {
+    color: #D03917;
+}
+
+.chronimes3 h1 {
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--red-1000, #D03917);
+}
+
+.frase {
+    margin: 265px 368px 0 368px;
+
+    width: 727px;
+    height: 34px;
+}
+
+.frase p {
+    display: block;
+    font-family: 'League Spartan';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 10px;
+    text-align: center;
+
+    color: white;
+}
+
+.play { 
+    display: flex;
+    justify-content: center;
+    margin: 0 620px;
+
+    width: 199px;
+    height: 32px;
+    
+    border-radius: 5px;
+    background-color: #D03917;
+}
+
+.play a {
+    position: absolute;
+    z-index: 4;
+    margin: 7px;
+
+    font-family: 'League Spartan';
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+}
+
+.right {
+    display: block;
+    position: absolute;
+    top: -330px;
+    left: 540px;
+}
+
+.left {
+    display: block;
+    position: absolute;
+    top: 105px;
+    left: 0px;
+}
