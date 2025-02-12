@@ -227,7 +227,7 @@ input:hover {
     font-size: 16px;
 }
 
-p.forget {
+.forget p {
     margin: 20px 0 0 0;
     color: #ac2f13;
     text-decoration: underline;
@@ -238,7 +238,7 @@ a {
     font-weight: 700;
 }
 
-img.esdeath {
+.esdeath {
     position: absolute;
     top: 48px;
     left: 50%;

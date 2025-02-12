@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHRONIMES</title>
-    <link rel="stylesheet" href="CSS/initpage.css">
-    <title>CHRONIMES</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/initpage.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
     </style>
 </head>
 <body>
@@ -19,14 +17,49 @@
         <nav>
             <h1>CHRONIMES</h1>
             <p>os animes desafiam o tempo!</p>
+            <div class="btn-group">
+              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Gênero
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Romance</a>
+                <a class="dropdown-item" href="#">Outra ação</a>
+                <a class="dropdown-item" href="#">Alguma coisa aqui</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Link separado</a>
+              </div>
+              <!-- <button>
+                Gênero 
+                <select name="Gênero" class="gender">
+                <option value="">Romance</option>
+                <option value="">Terror</option>
+                <option value="">Comédia</option>
+                <option value="">Slice of Life</option>
+                <option value="">Si-Fi</option>
+                </select>
+              </button> -->
+            </div>
+            <div class="btn-group-2">
+              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Animes
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Alguma ação</a>
+                <a class="dropdown-item" href="#">Outra ação</a>
+                <a class="dropdown-item" href="#">Alguma coisa aqui</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Link separado</a>
+              </div>
+            </div>
             <div class="all">
-            <img src="img/home.svg" class="home">
-            <img src="img/acessibilirity.svg" class="acens">
-            <img src="img/more.svg" class="more">
+            <img src="img/search.svg" class="search">
+            <img src="img/fav.svg" class="fav">
+            <img src="img/user.svg" class="user">
             </div>
         </nav>
     </header>
     <main>
+      <img src="img/Blur Left.svg" class="blur-left">
         <section id="carousel">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -36,25 +69,33 @@
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
+                    <div id="content">
+                      <img src="img/background.png" class="black">
                     <div class="left">
                       <img src="img/animes/tokyo ghoul logo.svg" alt="Logo Tokyo Ghoul">
-                      <img src="img/animes/image 1.svg" alt="Classificação" class="years">
-                      <div class="circle"></div>
-                      <img src="img/animes/Dub _ Leg.svg">
-                      <p>Ken Kaneki, um estudante que mal sobrevive a um encontro mortal <br>com Rize Kamishiro, uma mulher que se revela um ghoul; ghouls são<br>criaturas semelhantes a humanos que caçam e devoram carne humana,<br>com essa revelação Rize ataca...</p>
+                      <div class="about">
+                        <img src="img/animes/image 1.svg" alt="Classificação" class="years">
+                        <div class="circle"></div>
+                        <img src="img/animes/Dub _ Leg.svg" class="sound">
+                        <p class="sinopse">Ken Kaneki, um estudante que mal sobrevive a um encontro mortal <br>com Rize Kamishiro, uma mulher que se revela um ghoul; ghouls são<br>criaturas semelhantes a humanos que caçam e devoram carne humana,<br>com essa revelação Rize ataca...</p>
+                      </div>
                       <form action="tokyoghoul.html">
-                        <input type="submit" value="Assista agora">
-                        <input type="button" value="" id="btn">
+                        <input type="submit" value="Assista agora" class="watch">
+                        <img src="img/star.svg" id="star">
                       </form>
                     </div>
-                    <img src="img/animes/mask.svg" class="mask">
+                    <div class="right">
+                      <img src="img/animes/mask.png" class="mask">
+                      <img src="img/Blur Right.svg" class="blur-right">
+                    </div>
+                    </div>
                   </div>
-                  <div class="carousel-item">
+                  <!-- <div class="carousel-item">
                     <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide" alt="Segundo Slide">
                   </div>
                   <div class="carousel-item">
                     <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
-                  </div>
+                  </div> -->
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -65,6 +106,190 @@
                   <span class="sr-only">Próximo</span>
                 </a>
               </div>
+        </section>
+
+        <section id="popular">
+          <h1 class="popular">Populares</h1>
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="animes">
+                  <div class="kimetsu">
+                    <img src="img/animes/kimetsu.png" alt="Kimetsu no Yaiba"><img src="img/animes/blur.png" class="blur">
+                    <p class="name"><strong>Kimetsu no Yaiba</strong></p>
+                    <p class="size">3 Temporadas</p>
+                  </div>
+                  <div class="jujutsu">
+                    <img src="img/animes/jujutsu.png" alt="Jujutsu Kaisen"><img src="img/animes/blur.png" class="blur">
+                    <p class="name"><strong>Jujutsu Kaisen</strong></p>
+                    <p class="size">2 Temporadas</p>
+                  </div>
+                  <div class="shingeki">
+                    <img src="img/animes/shingeki.png" alt="Shingeki no Kyojin"><img src="img/animes/blur.png" class="blur">
+                    <p class="name"><strong>Shingeki no Kyojin</strong></p>
+                    <p class="size">4 Temporadas</p>
+                  </div>
+                  <div class="naruto">
+                    <img src="img/animes/naruto.png" alt="Naruto"><img src="img/animes/blur.png" class="blur">
+                    <p class="name"><strong>Naruto</strong></p>
+                    <p class="size">9 Temporadas</p>
+                  </div>
+                  <div class="spyfamily">
+                    <img src="img/animes/spy x family.png" alt="Spy X Family"><img src="img/animes/blur.png" class="blur">
+                    <p class="name"><strong>Spy X Family</strong></p>
+                    <p class="size">2 Temporadas</p>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="carousel-item">
+                <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide" alt="Segundo Slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
+              </div> -->
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </div>
+        </section>
+
+        <section id="recommend">
+          <div id="fy">
+            <h1 class="recommend">Recomendados para você</h1>
+            <div class="nanatsu">
+              <img src="img/animes/nanatsu no taizai.png" alt="Nanatsu no Taizai" class="nanatsu-img">
+              <div class="detail-nanatsu">
+                <img src="img/animes/nanatsu logo.png" alt="Logo Nanatsu no Taizai" class="logonanatsu">
+                <div class="more">
+                  <img src="img/animes/12anos.png">
+                  <div class="circle1"></div>
+                  <p class="type">Animes</p>
+                  <div class="circle1"></div>
+                  <p>2014</p>
+                  <div class="circle1"></div>
+                  <p>5 temporadas</p>
+                </div>
+                  <p>Os Sete Pecados Capitais são um grupo de cavaleiros que vivem na região de Britânia, mas<br>
+                    separaram-se, depois de serem acusados de tentar derrubar o Reino de Liones. Sua<br>
+                    suposta derrota chegou pelas mãos dos Cavaleiros Sagrados, mas os rumores de que eles<br>
+                    ainda estavam vivos, persistiriram...</p>
+                  <div class="gendernanatsu">
+                    <p>Shounen</p>
+                    <p>Fantasia</p>
+                    <p>Si-Fi</p>
+                    <p>Ação</p>
+                  </div>
+              </div>
+            </div>
+            <div class="totoro">
+              <img src="img/animes/totoro.png" class="totoro-img">
+              <div class="totoro-detail">
+                <img src="img/animes/totoro logo.png" alt="Logo Meu Amigo Totoro" class="logototoro">
+                <div class="more1">
+                  <img src="img/animes/L.png">
+                  <div class="circle1"></div>
+                  <p class="type">Filme</p>
+                  <div class="circle1"></div>
+                  <p>1988</p>
+                  <div class="circle1"></div>
+                  <p>1h26min</p>
+                </div>
+                <p>As irmãs Satsuki e Mei se mudam para o campo para ficar mais perto do hospital onde<br>
+                  sua mãe está internada. Lá conhecem os Totoros, adoráveis criaturas místicas e alegres,<br>
+                  que só podem ser vistas pelas crianças. Com eles, as duas irmãs viverão...</p>
+                <div class="gendertotoro">
+                  <p>Família</p>
+                  <p>Infantil</p>
+                  <p>Clássica</p>
+                  <p>Aventura</p>
+                </div>
+              </div>
+            </div>
+            <div class="koe">
+              <img src="img/animes/koe no katachi.png" alt="Koe no Katachi" class="koe-img">
+              <div class="koe-detail">
+                <img src="img/animes/koenokatachi logo.png" alt="Koe no Katachi Logo" class="logokoe">
+                <div class="more2">
+                  <img src="img/animes/14anos.png">
+                  <div class="circle1"></div>
+                  <p>Filme</p>
+                  <div class="circle1"></div>
+                  <p>2016</p>
+                  <div class="circle1"></div>
+                  <p>2h09m</p>
+                </div>
+                <p class="koe-text">A história gira em torno de Shōko Nishimiya, uma estudante do primário que sofre <br>
+                  de surdez. Ela é transferida para uma nova escola, mas acaba sendo intimidada por seus <br> 
+                  colegas. Shouya Ishida, um dos valentões responsáveis acaba forçando-a para mudar <br>
+                  de escola...</p>
+                <div class="genderkoe">
+                  <p>Fantasia</p>
+                  <p>Drama</p>
+                  <p>Romance</p>
+                  <p>Slice of Life</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="release">
+          <div id="new">
+          <h1 class="release">Lançamentos</h1>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel"></div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="animes">
+                    <div class="dr-stone">
+                      <img src="img/animes/dr stone.svg" alt="Kimetsu no Yaiba"><img src="img/animes/blur.png" class="blur">
+                      <p class="name"><strong>Dr.STONE</strong></p>
+                      <p class="size">3 Temporadas</p>
+                    </div>
+                    <div class="hunterxhunter">
+                      <img src="img/animes/hunter x hunter.svg" alt="Jujutsu Kaisen"><img src="img/animes/blur.png" class="blur">
+                      <p class="name"><strong>Hunter X Hunter</strong></p>
+                      <p class="size">2 Temporadas</p>
+                    </div>
+                    <div class="death">
+                      <img src="img/animes/death note.svg" alt="Death Note"><img src="img/animes/blur.png" class="blur">
+                      <p class="name"><strong>Death Note</strong></p>
+                      <p class="size">2 Temporadas</p>
+                    </div>
+                    <div class="sakurasou">
+                      <img src="img/animes/sakurasou.svg" alt="Sakurasou no Pet no Hanayone"><img src="img/animes/blur.png" class="blur">
+                      <p class="name"><strong>Sakurasou no Pet no Hanayone</strong></p>
+                      <p class="size">1 Temporada</p>
+                    </div>
+                    <div class="kakegurui">
+                      <img src="img/animes/kakegurui.svg" alt="Kakegurui"><img src="img/animes/blur.png" class="blur">
+                      <p class="name"><strong>Kakegurui</strong></p>
+                      <p class="size">2 Temporadas</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="carousel-item">
+                  <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide" alt="Segundo Slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
+                </div> -->
+              </div>
+              <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" class="ne">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+              </a> -->
+            </div>
+          </div>
         </section>
     </main>
 </body>

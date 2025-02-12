@@ -1,11 +1,17 @@
 body {
     display: flex;
+    overflow-x: hidden;
+
     background-color: rgb(0, 0, 0);
-    overflow: hidden;
+    font-family: 'Arimo', serif;
 }
 
 nav {
+    display: flex;
+    justify-content: space-between;
+
     position: fixed;
+    z-index: 1000;
     background-color: rgb(0, 0, 0);
     width: 100%;
     height: 72px;
@@ -32,11 +38,49 @@ nav p {
     color: white;
 }
 
+.btn-group, .btn-group-2 {
+    margin: 20px;
+    position: absolute;
+}
+
+.btn-group {
+    left: 260px;
+}
+
+.btn-group button {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+
+    color: #DADADA;
+    font-size: 20px;
+    font-family: 'Inter';
+    
+    width: 120px;
+    height: 35px;
+}
+
+.btn-group-2 {
+    left: 400px;
+}
+
+.btn-group-2 button {
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+
+    color: #DADADA;
+    font-size: 20px;
+    font-family: 'Inter';
+    
+    width: 120px;
+    height: 35px;
+}
+
 .all {
     display: flex;
     justify-content: space-around;
 
-    /* border: 2px solid white; */
     width: 224px;
     height: 70px;
 
@@ -44,7 +88,7 @@ nav p {
     margin: 0 32px 0 0;
 }
 
-.home, .acens, .more {
+.search, .fav, .user {
     margin-top: 14px;
     padding: 10px;
 
@@ -54,4 +98,374 @@ nav p {
 
     background-color: #902811;
 }
+
+main {
+    width: 2000px;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.carousel-control-prev {
+    margin-top: -120px;
+    margin-left: -84px;
+}
+
+.carousel-control-next {
+    margin-top: -120px;
+    margin-right: 0px;
+}
+
+#content {
+    display: flex;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+
+    margin: 256px 0 0 120px;
+    color: #DADADA;
+}
+
+.blur-left {
+    display: flex;
+    position: absolute;
+}
+
+.about {
+    margin-top: 18px;
+}
+
+.years {
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+
+.circle {
+    position: relative;
+    float: left;
+
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #DADADA;
+
+    top: 10px;
+    left: 12px;
+}
+
+.sound {
+    position: relative;
+    width: 64px;
+
+    left: 24px;
+}
+
+.sinopse {
+    margin-top: 16px;
+    font-size: 16px;
+}
+
+.watch {
+    width: 360px;
+    height: 44px;
+
+    background-color: #C71717;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#star {
+    margin-left: 8px;
+    width: 42px;
+}
+
+.right {
+    position: relative;
+    top: -80px;
+
+    display: flex;
+}
+
+.blur-right {
+    position: relative;
+    z-index: -2;
+}
+
+.mask {
+    position: relative;
+    width: 90%;
+    height: 95%;
+    z-index: -1;
+}
+
+.black {
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+}
+
+.carousel-indicators {
+    top: 780px;
+}
+
+
+/* 2° SECTION */
+#popular {
+    margin-top: 200px;
+    margin: auto;
+    margin-bottom: 200px;
+
+    width: 95%;
+    justify-content: center;
+}
+
+#popular h1 {
+    margin: 24px 38px;
+
+    font-size: 40px;
+    font-weight: bold;
+    color: #E1E1E1;
+    opacity: 80%;
+}
+
+.animes {
+    position: relative;
+    z-index: -1;
+    left: 138px;
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 60px;
+}
+
+.spyfamily img {
+    height: 352px;
+}
+
+.blur {
+    position: absolute;
+    z-index: 1;
+    width: 250px;
+    margin-left: -250px;
+}
+
+.animes p {
+    position: relative;
+    top: 4px;
+    z-index: 2;
+
+    margin: 0;
+    color: white;
+    opacity: 80%;
+}
+
+/* 3° SECTION  */
+#recommend {
+    display: flex;
     
+    margin: 24px 82px; 
+}
+
+#fy {
+    margin-top: 200px;
+    margin: auto;
+    margin-bottom: 120px;
+    
+    width: 1200px;
+}
+
+.recommend {
+    font-size: 40px;
+    font-weight: bold;
+    color: #E1E1E1;
+    opacity: 80%;
+}
+
+.nanatsu {
+    display: flex;
+    gap: 36px;
+}
+
+.nanatsu-img {
+    width: 500px;
+    height: 300px;
+}
+
+.logonanatsu {
+    width: 245px;
+    height: 116px;
+}
+
+.more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #E1E1E1;
+
+    width: 320px;
+}
+
+.more p {
+    position: relative;
+    top: -4px;
+}
+
+.more img {
+    width: 24px;
+    height: 24px;
+}
+
+.circle1 {
+    position: relative;
+    float: left;
+
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #DADADA;
+}
+
+.nanatsu p {
+    color: #E1E1E1;
+    margin: 8px 0 0 0;
+}
+
+.gendernanatsu {
+    display: flex;
+    gap: 20px;
+
+    margin-top: 4px;
+    color: #E1E1E1;
+    opacity: 70%;
+}
+
+.totoro {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 64px;
+    gap: 24px;
+
+    color: #E1E1E1;
+}
+
+.totoro p {
+    text-align: end;
+}
+
+.totoro-img {
+    width: 500px;
+    height: 300px;
+}
+
+.logototoro {
+    margin: 0;
+    float: right;
+}
+
+.more1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #E1E1E1;
+
+    width: 320px;
+    margin: 140px 0 0 352px;
+}
+
+.more1 p {
+    position: relative;
+    top: 8px;
+}
+
+.more1 img {
+    width: 24px;
+    height: 24px;
+}
+
+.gendertotoro {
+    display: flex;
+    margin-left: 388px;
+    gap: 20px;
+    opacity: 70%;
+}
+
+.koe {
+    display: flex;
+    margin-top: 64px;
+    gap: 24px;
+
+    color: #E1E1E1;
+}
+
+.koe-img {
+    width: 500px;
+    height: 300px;
+}
+
+.logokoe {
+    width: 320px;
+    height: 145px;
+    margin-top: -10px;
+}
+
+.koe-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.more2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #E1E1E1;
+
+    width: 320px;
+}
+
+.more2 p {
+    position: relative;
+    top: 7px;
+    
+}
+
+.more2 img {
+    width: 24px;
+    height: 24px;
+}
+
+.koe-text {
+    margin: 0;
+}
+
+.genderkoe {
+    display: flex;
+    margin-top: 6px;
+
+    gap: 24px;
+    opacity: 70%;
+}
+
+/* 4° SECTION */
+#release {
+    margin-top: 200px;
+    margin: auto;
+    margin-bottom: 200px;
+
+    width: 95%;
+    justify-content: center;
+}
+
+#release h1 {
+    margin: 24px 38px;
+
+    font-size: 40px;
+    font-weight: bold;
+    color: #E1E1E1;
+    opacity: 80%;
+}
