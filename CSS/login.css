@@ -62,7 +62,8 @@ nav p {
 
 .blur-right {
     margin-top: -702px;
-    margin-left: 610px;
+    margin-left: 760px;
+    
     position: absolute;
     z-index: -1;
 }
@@ -207,7 +208,7 @@ input:hover {
 }
 
 .enter {
-    margin: 28px 0 0 32px;
+    margin: 28px 0 24px 32px;
     justify-items: center;
 
     width: 460px;
@@ -224,13 +225,16 @@ input:hover {
     flex-direction: column;
     margin-left: 32px;
 
-    font-size: 16px;
+    font-size: 0px;
 }
 
 .forget p {
-    margin: 20px 0 0 0;
     color: #ac2f13;
     text-decoration: underline;
+}
+
+p.forget {
+    margin-bottom: 0px;
 }
 
 a {
@@ -248,4 +252,173 @@ a {
 
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     mix-blend-mode: luminosity;
+}
+
+@media (max-width: 480px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        width: 100%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+
+        width: 100%;
+        height: 52px;
+
+        text-align: center;
+        margin: auto;
+        top: 0;
+        padding: 0;
+        background-color: black;
+    }
+
+    nav h1 {
+        font-size: 28px;
+        margin: 24px 0 0 0;
+        height: 2px;
+    }
+
+    nav p {
+        top: 52px;
+        left: 115px;
+        font-size: 12px;
+        flex-wrap: wrap;
+    }
+    
+    .all {
+        display: none;
+    }
+    
+    .blur-left {
+        display: none;
+    }
+
+    .blur-right {
+        position: absolute;
+        right: 0;
+        top: -105px;
+
+        margin: 0;
+        padding: 0;
+
+        opacity: 60%;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 72px 24px 0 24px;
+    }
+
+    .login h1 {
+        display: flex;
+        font-size: 32px;
+        margin: 0 24px;
+
+        justify-content: center;
+        font-size: 32px;
+    }
+
+    .login p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bg-forms {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    
+        width: 80%;
+        height: 400px;
+    }
+
+    .bg-forms .p {
+        font-size: 12px;
+    }
+    
+    .email label, .password label {
+        font-size: 12px;
+    }
+
+    .email input, .password input {
+        display: flex;
+        width: 80%;
+        height: 32px;
+    }
+
+    .email img, .password img {
+        display: flex;
+        width: 18px;
+        height: 18px;
+        margin: 27px 45px;
+    }
+
+    input::placeholder, input p::placeholder {
+        font-size: 14px;
+    }
+
+    .check {
+        width: 16px;
+        height: 16px;
+        background-color: #474242;
+        appearance: none;
+        -webkit-appearance: none;
+        border-radius: 4px;
+        border: 2px solid #474242;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .check:checked::after {
+        content: "✓";
+        color: rgb(255, 255, 255);
+        font-size: 10px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .checkbox label {
+        font-size: 12px;
+    }
+
+    .enter {
+        margin: 28px 0 24px 32px;
+        justify-items: center;
+    
+        width: 80%;
+        height: 38px;
+        
+        background-color: #ac2f13;
+        color: #FFFFFF;
+        border-style: none;
+        font-weight: 500;
+    }    
+
+    .account p {
+        display: flex;
+        gap: 4px;
+        font-size: 12px;
+    }
+
+    .esdeath {
+        display: flex;
+        position: relative;
+
+        top: 85%;
+        left: 20%;
+
+        height: 260px;
+        width: 270px;
+    }
 }
