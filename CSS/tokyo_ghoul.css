@@ -21,6 +21,7 @@ body {
         opacity: 1;
     }
 }
+
 nav {
     width: 100%;
     height: 72px;
@@ -119,14 +120,13 @@ main {
     
     width: 575px;
     height: 577px;
-    flex-shrink: 0; 
     z-index: -1;
 }
 
 .container {
     display: flex;
     align-items: center;
-
+    
     gap: 50px;
 }
 
@@ -135,20 +135,21 @@ main {
     flex-direction: column;
     align-items: center;
 
-    margin-top: 70px;
+    margin-top: 90px;
 }
 
 .poster {
-    margin-top: 140px;
-    margin-bottom: 20px;
+    margin-top: 120px;
     width: 324px;
     height: 482px;
 }
 
 .logo {
-    width: 482px;
-    height: 145px;
-    margin-top: 50px;
+    width: 100%;
+    height: 140px;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    
 }
 
 .anime-information {
@@ -179,12 +180,12 @@ main {
 
 .sinopse {
     font-size: 13px;
-    width: 468px;
-    height: 170px;
+    width: 474px;
+    height: 190px;
     border-radius: 8px;
-    padding-left: 22px;
+    padding-left: 16px;
+    padding-left: 16px;
     
-
     background: rgba(109, 105, 105, 0.30);
 }
 
@@ -193,7 +194,7 @@ main {
     flex-wrap: wrap;
     gap: 12px;
     width: 436px;
-    margin-top: 16px;
+    margin-top: 14px;
     margin-bottom: 32px;
 }
 
@@ -206,7 +207,9 @@ main {
     font-size: 11px;
     margin: 0;
 
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     color: rgba(255, 255, 255, 0.85);
     background-color: #E71919;
@@ -224,22 +227,15 @@ main {
 .temp {
     display: flex;
     justify-content: space-between;
+
     padding-left: 20px;
-
-}
-.epi {
-    display: flex;
-}
-
-.icon-play {
-    margin-left: 8px;
 }
 
 .play {
     display: flex;
     justify-content: center; 
     align-items: center;
-    
+
     gap: 8px;
     width: 142px;
     height: 22px;
@@ -257,6 +253,14 @@ main {
     
 }
 
+.epi {
+    display: flex;
+}
+
+.icon-play {
+    margin-left: 8px;
+}
+
 .adicionar-favorito {
     margin: auto;
     display: flex;
@@ -272,18 +276,20 @@ main {
     font-size: 12px;
 }
 
-.comment-container {
-    margin-top: 120px;
-    margin-bottom: 160px;
-}
 .icone-comment img {
     margin-right: 8px;
 }
 
 .icone-comment {
     display: flex;
+    margin-top: 165px;
 }
 
+.icone-comment span {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: 600px;
+}
 .ball-gray {
     background-color: rgba(217, 217, 217, 0.50);
     position: absolute;
@@ -324,21 +330,83 @@ main {
     margin: 18px 0 24px 26px;
 }
 
+.comment-container {
+    margin-bottom: 75px;
+}
 
-.comment-input p {
-    color: #FFFFFF;
-    opacity: 80%;
+.comentario {
+    background-color: #121212;
+    height: 90px;
+    
+    width: 862px;
+    padding: 6px 10px 6px 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+}
+
+.ball {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-comment {
     font-size: 14px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.86);
+}
 
-    text-align: center;
+.usuario {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.50);
+    margin: 0;
+}
+
+.feedback {
+    color: #FFF;
+    font-size: 12px;
+    margin: 10px 0;
+    margin-bottom: 0;
+}
+
+.acoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.reacoes {
+    display: flex;
+    gap: 10px;
+}
+
+.responder-btn {
+    font-size: 12px;
+    color: red;
+    cursor: pointer;
 }
 
 
 footer {
     display: flex;
     position: relative;
+    bottom: 0;
     background: linear-gradient(0deg, rgba(144, 40, 17, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
     width: 100%;
+    
 
 }
 
@@ -416,7 +484,6 @@ footer a {
     right: 0;
     margin-right: 48px;
     font-size: 18px;
-    margin-left: 600px;
     bottom: 30px;
     
     color: rgba(255, 255, 255, 0.60);

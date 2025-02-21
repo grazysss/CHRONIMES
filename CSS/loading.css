@@ -1,3 +1,223 @@
+
 body {
-    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inter;
+    background: url(../img/Animes/baixados\ \(2\)\ 1.png) rgb(0, 0, 0) no-repeat fixed;
+    background-size: cover;
+    background-blend-mode: luminosity;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
 }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.container {
+    text-align: center;
+
+    margin-top: 84px;
+    width: 631px;
+    height: 651px;
+    padding: 20px 40px;
+    border-radius: 8px;
+
+    background-color: #222;
+    border-right: 19px solid rgba(0, 0, 0, 0.40);
+    border-bottom: 18px solid rgba(0, 0, 0, 0.40);
+    box-shadow: 0 4px 10px rgba(20, 19, 19, 0.90);
+}
+
+.play {
+    margin-top: 20px;
+    text-align: center;
+    width: 100px;
+    height: 120px;
+}
+
+h1 {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.loading {
+    display: flex;
+    flex-direction: column; 
+}
+
+.loading1 {
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    word-wrap: break-word;
+    text-shadow: -5px 4px  #C71717;
+}
+
+.frase1 p {
+    margin: 0;
+}
+
+.frase1 {
+    color: var(--white, #FFF);
+    margin-top: 3px;
+    font-size: 18px;
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.frase2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    color: var(--gray-750, #D9D9D9);
+    margin-top: 60px;
+    font-size: 18px;
+}
+
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(177, 33, 0, 0.80);
+    border-radius: 8px;
+    width: 450px;
+    height: 44px;
+    border: none;
+    padding: 10px 15px;
+}
+
+a {
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+.botoes a {
+    color: #FFF;
+}
+
+.left {
+    position: absolute;
+    top: 0px;
+    left: -1px;
+    width: 800px;
+}
+
+.right {
+    position: fixed;
+    width: 800px;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    top: auto;  /* Remove o top para evitar que o elemento se mova para o topo */
+    left: auto; /* Remove o left para garantir que ele fique fixo à direita */
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+        width: 70%;
+        padding: 20px 40px;
+    }
+
+    .play {
+        margin-top: 20px;
+        text-align: center;
+        width: 100px;
+        height: 120px;
+    }
+
+    .loading1 {
+        font-size: 24px;
+    }
+
+    .frase1, .frase2 {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .left, .right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .container {
+        height: 50%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 55%;
+        padding: 15px 35px;
+    }
+
+    .play {
+        margin-top: 20px;
+        text-align: center;
+        width: 50px;
+        height: 60px;
+    }
+
+    .loading1 {
+        font-size: 12px;
+    }
+
+    .frase1, .frase2 {
+        font-size: 10px;
+    }
+
+    .frase2 {
+        margin-top: 30px;
+    }
+
+    .btn {
+        width: 80%;
+        height: 60%;
+    }
+
+    a {
+        font-size: 10px;
+    }
+
+    .left, .right {
+        display: none;
+    }
+}
+
+
