@@ -1,14 +1,26 @@
 body {
     display: flex;
+    flex-direction: column;
     overflow-x: hidden;
 
     background-color: rgb(0, 0, 0);
     font-family: 'Arimo', serif;
+
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
 
     position: fixed;
     z-index: 1000;
@@ -38,53 +50,67 @@ nav p {
     color: white;
 }
 
-.btn-group, .btn-group-2 {
+.polygon {
+    margin-top: 6px;
+}
+
+/* .btn-group, .btn-group-2 {
     margin: 20px;
     position: absolute;
 }
 
 .btn-group {
     left: 260px;
-}
+} */
 
-.btn-group button {
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0);
+.menu {
+    position: relative;
+    display: inline-block;
+    margin: 16px 0 0 63px;
+}
+  
+.btn {
+    background-color: black;
+    color: white;
+
+    padding: 10px;
     border: none;
-
-    color: #DADADA;
-    font-size: 20px;
-    font-family: 'Inter';
-    
-    width: 120px;
-    height: 35px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-.btn-group-2 {
-    left: 400px;
+.content {
+    display: none;
+    position: absolute;
+    background-color: #222;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.btn-group-2 button {
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0);
-    border: none;
+.content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
 
-    color: #DADADA;
-    font-size: 20px;
-    font-family: 'Inter';
-    
-    width: 120px;
-    height: 35px;
+.content a:hover {
+    background-color: #444;
+}
+ 
+.menu:hover .content {
+    display: flex;
+    flex-direction: column;
 }
 
 .all {
     display: flex;
     justify-content: space-around;
+    position: absolute;
 
     width: 224px;
     height: 70px;
 
-    float: right;
+    right: 0px;
     margin: 0 32px 0 0;
 }
 
@@ -99,6 +125,12 @@ nav p {
     background-color: #902811;
 }
 
+.blur-right1 {
+    position: absolute;
+    left: 1400px;
+}
+
+/* 1° SECTION */
 main {
     width: 2000px;
     margin: auto;
@@ -106,13 +138,13 @@ main {
 }
 
 .carousel-control-prev {
-    margin-top: -120px;
+    margin-top: -160px;
     margin-left: -84px;
 }
 
 .carousel-control-next {
-    margin-top: -120px;
-    margin-right: 0px;
+    margin-top: -160px;
+    margin-right: -20px;
 }
 
 #content {
@@ -179,6 +211,7 @@ main {
 }
 
 #star {
+    margin-top: -3px;
     margin-left: 8px;
     width: 42px;
 }
@@ -191,8 +224,10 @@ main {
 }
 
 .blur-right {
-    position: relative;
+    position: absolute;
     z-index: -2;
+    margin-top: 40px;
+    opacity: 0.8;
 }
 
 .mask {
@@ -210,17 +245,17 @@ main {
 }
 
 .carousel-indicators {
-    top: 780px;
+    top: 800px;
+    left: -80px;
 }
-
 
 /* 2° SECTION */
 #popular {
-    margin-top: 200px;
     margin: auto;
+    margin-top: 50px;
     margin-bottom: 200px;
 
-    width: 95%;
+    width: 90%;
     justify-content: center;
 }
 
@@ -265,10 +300,17 @@ main {
     opacity: 80%;
 }
 
+
+.blur-left1 {
+    position: absolute;
+    margin-top: 180px;
+    opacity: 0.8;
+}
+
 /* 3° SECTION  */
 #recommend {
     display: flex;
-    
+
     margin: 24px 82px; 
 }
 
@@ -468,4 +510,219 @@ main {
     font-weight: bold;
     color: #E1E1E1;
     opacity: 80%;
+}
+
+footer {
+    display: flex;
+    position: relative;
+    width: 100%;
+    
+    bottom: 0px;
+
+    background: linear-gradient(0deg, rgba(144, 40, 17, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 100px;
+    margin-left: 80px;
+    margin-bottom: 20px;
+    width: 820px;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 14px;
+
+    margin-bottom: 10px;
+    bottom: 10px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.60);
+    text-decoration: none;
+
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-linha {
+    display: flex;
+
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.contato-item {
+    display: flex;
+    gap: 6px;
+}
+
+.contato-item img {
+    width: 16px;
+    height: 16px;   
+
+}
+#item {
+    margin-right: 34px;
+}
+
+#tiktok {
+    width: 22px;
+    height: 22px;
+}
+
+.separador {
+    color: rgb(189, 189, 189);
+    font-size: 18px;
+}
+
+.footer-conta {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-direitos span {
+    color: #FFFFFF;
+}
+
+.text {
+    font-size: 18px;
+    right: 0;
+    margin-right: 48px;
+    bottom: 40px;
+    position: absolute;
+    
+    color: rgba(255, 255, 255, 0.60);
+    text-align: right;
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 480px;
+        margin: auto;
+    }
+
+    main {
+        width: 100%;
+        margin: auto;
+    }
+
+    nav h1 {
+        margin: 18px 0 0 16px;
+        font-size: 26px;
+        font-weight: 800;
+    }
+
+    nav p {
+        top: 46px;
+        left: 26px;
+        font-size: 10px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        position: absolute;
+        top: 28px;
+        right: 24px;
+    }
+    
+    .menu-mobile div {
+        width: 24px;
+        height: 1px;
+        background-color: #FFFFFF;
+    }
+
+    .all {
+        display: none;
+    }
+
+    #content {
+        display: flex;
+
+        width: 100%;
+        margin: auto;
+    }
+
+    .left {
+        position: absolute;
+        margin: 0;
+        top: 350px;
+        z-index: 5;
+    }
+
+    .mask {
+        width: 950px;
+        height: 900px;
+        
+        left: -360px;
+        z-index: -1;
+        
+        opacity: 60%;
+        filter: brightness(70%);
+    }
+
+    .black {
+        position: absolute;
+        z-index: 5;
+
+        width: 100%;
+        left: 0px;
+    }
+
+    .left .logo-tokyo {
+        top: 16px;
+        margin-left: 54px;
+        width: 280px;
+
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        display: none;
+    }
+
+    .sinopse {
+        display: none;
+    }
+
+    .about {
+        margin-left: 136px;
+    }
+
+    .watch {
+        margin-top: 16px;
+        margin-left: 24px;
+
+        width: 280px;
+        height: 42px;
+    }
+
+   #popular {
+        display: flex;
+   }
+
+   #popular h1 {
+        position: absolute;
+        justify-content: center;
+        font-size: 24px;
+   }
+
+   .anime img {
+        width: 20px;
+   }
+
 }

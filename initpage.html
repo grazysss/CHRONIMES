@@ -15,89 +15,77 @@
 <body>
     <header>
         <nav>
-            <h1>CHRONIMES</h1>
+          <a href="initpage.html"><h1>CHRONIMES</h1></a>
             <p>os animes desafiam o tempo!</p>
-            <div class="btn-group">
-              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Gênero
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Romance</a>
-                <a class="dropdown-item" href="#">Outra ação</a>
-                <a class="dropdown-item" href="#">Alguma coisa aqui</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Link separado</a>
+            <div class="menu">
+              <button class="btn" >Gênero <img src="img/polygon.svg" class="polygon"></button>
+              <div class="content">
+                <a href="#">Ação</a>
+                <a href="#">Fantasia</a>
+                <a href="#">Romance</a>
               </div>
-              <!-- <button>
-                Gênero 
-                <select name="Gênero" class="gender">
-                <option value="">Romance</option>
-                <option value="">Terror</option>
-                <option value="">Comédia</option>
-                <option value="">Slice of Life</option>
-                <option value="">Si-Fi</option>
-                </select>
-              </button> -->
+            </div>           
+            <div class="menu" style="margin-left: 42px;">
+              <button class="btn">Animes <img src="img/polygon.svg" class="polygon"></button>
+              <div class="content">
+                <a href="#">Filmes</a>
+                <a href="#">Séries</a>
+              </div>
             </div>
-            <div class="btn-group-2">
-              <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Animes
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Alguma ação</a>
-                <a class="dropdown-item" href="#">Outra ação</a>
-                <a class="dropdown-item" href="#">Alguma coisa aqui</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Link separado</a>
-              </div>
+            </div>
             </div>
             <div class="all">
             <img src="img/search.svg" class="search">
             <img src="img/fav.svg" class="fav">
             <img src="img/user.svg" class="user">
             </div>
+            <div class="menu-mobile">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
         </nav>
     </header>
     <main>
       <img src="img/Blur Left.svg" class="blur-left">
-        <section id="carousel">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div id="content">
-                      <img src="img/background.png" class="black">
-                    <div class="left">
-                      <img src="img/animes/tokyo ghoul logo.svg" alt="Logo Tokyo Ghoul">
-                      <div class="about">
-                        <img src="img/animes/image 1.svg" alt="Classificação" class="years">
-                        <div class="circle"></div>
-                        <img src="img/animes/Dub _ Leg.svg" class="sound">
-                        <p class="sinopse">Ken Kaneki, um estudante que mal sobrevive a um encontro mortal <br>com Rize Kamishiro, uma mulher que se revela um ghoul; ghouls são<br>criaturas semelhantes a humanos que caçam e devoram carne humana,<br>com essa revelação Rize ataca...</p>
-                      </div>
-                      <form action="tokyoghoul.html">
-                        <input type="submit" value="Assista agora" class="watch">
-                        <img src="img/star.svg" id="star">
-                      </form>
-                    </div>
-                    <div class="right">
-                      <img src="img/animes/mask.png" class="mask">
-                      <img src="img/Blur Right.svg" class="blur-right">
-                    </div>
-                    </div>
+      <section id="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div id="content">
+                <img src="img/background.png" class="black">
+                <div class="left">
+                  <img src="img/animes/tokyo ghoul logo.svg" alt="Logo Tokyo Ghoul" class="logo-tokyo">
+                  <div class="about">
+                    <img src="img/animes/image 1.svg" alt="Classificação" class="years">
+                    <div class="circle"></div>
+                    <img src="img/animes/Dub _ Leg.svg" class="sound">
+                    <p class="sinopse">Ken Kaneki, um estudante que mal sobrevive a um encontro mortal <br>com Rize Kamishiro, uma mulher que se revela um ghoul; ghouls são<br>criaturas semelhantes a humanos que caçam e devoram carne humana,<br>com essa revelação Rize ataca...</p>
                   </div>
-                  <!-- <div class="carousel-item">
-                    <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide" alt="Segundo Slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
-                  </div> -->
+                  <form action="tokyoghoul.html">
+                    <input type="submit" value="Assista agora" class="watch">
+                    <img src="img/star.svg" id="star">
+                  </form>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <div class="right">
+                  <img src="img/animes/mask.png" class="mask">
+                  <img src="img/Blur Right.svg" class="blur-right">
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/gojou.png" alt="Segundo Slide">
+            </div>
+            <!-- <div class="carousel-item">
+              <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
+            </div> -->
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Anterior</span>
                 </a>
@@ -107,7 +95,8 @@
                 </a>
               </div>
         </section>
-
+        
+        <img src="img/Blur Right 1.svg" class="blur-right1">
         <section id="popular">
           <h1 class="popular">Populares</h1>
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -115,7 +104,7 @@
               <div class="carousel-item active">
                 <div class="animes">
                   <div class="kimetsu">
-                    <img src="img/animes/kimetsu.png" alt="Kimetsu no Yaiba"><img src="img/animes/blur.png" class="blur">
+                    <a href="kimetsu.html"><img src="img/animes/kimetsu.png" alt="Kimetsu no Yaiba"><img src="img/animes/blur.png" class="blur"></a>
                     <p class="name"><strong>Kimetsu no Yaiba</strong></p>
                     <p class="size">3 Temporadas</p>
                   </div>
@@ -159,6 +148,7 @@
           </div>
         </section>
 
+        <img src="img/Blur Left 1.svg" class="blur-left1">
         <section id="recommend">
           <div id="fy">
             <h1 class="recommend">Recomendados para você</h1>
@@ -179,7 +169,7 @@
                     separaram-se, depois de serem acusados de tentar derrubar o Reino de Liones. Sua<br>
                     suposta derrota chegou pelas mãos dos Cavaleiros Sagrados, mas os rumores de que eles<br>
                     ainda estavam vivos, persistiriram...</p>
-                  <div class="gendernanatsu">
+                    <div class="gendernanatsu">
                     <p>Shounen</p>
                     <p>Fantasia</p>
                     <p>Si-Fi</p>
@@ -292,6 +282,54 @@
           </div>
         </section>
     </main>
+    <footer>
+      <div class="rodape">
+          <div class="footer-nav">
+              <p>Navegação</p>
+              <a href="initpage.html">Início</a>
+              <a href="">Animes</a>
+              <a href="">Filmes</a>
+              <a href="favorite.html">Favoritos</a>
+          </div>
+          <div>
+              <p>Contate-nos</p>
+              <div class="contato-linha">
+                  <div class="contato-item">
+                      <img src="img/insta.svg" alt="Ícone do Instagram">
+                      <a href="">@grazysouzzax__</a>
+                  </div>
+                  <span class="separador">|</span>
+                  <div class="contato-item">
+                      <img src="img/insta.svg" alt="Ícone do Instagram">
+                      <a href="">@_yonaragomes</a>
+                  </div>
+              </div>
+              <div class="contato-linha">
+                  <div class="contato-item" id="item">
+                      <img src="img/tiktok.svg" alt="Ícone do TikTok"  id="tiktok">
+                      <a href="">@sz_grays</a>
+                  </div>
+                  <span class="separador">|</span>
+                  <div class="contato-item">
+                      <img src="img/tiktok.svg" alt="Ícone do TikTok" id="tiktok">
+                      <a href="">@yonara.paiva</a>
+                  </div>
+              </div>
+          </div> 
+          <div class="footer-conta">
+              <p>Conta</p>
+              <a href="">Entrar</a>
+              <a href="register.html">Cadastrar</a>
+          </div> 
+          <div class="footer-direitos">
+              <p>Direitos Autorais</p>
+              <a href=""><span>© Chronimes</span></a>
+          </div>
+      </div>
+      <div class="text">
+          <p>Projeto de desenvolvimento de <br>wireframe para a disciplina de <br> Autoria Web.</p>
+      </div>                          
+  </footer>
 </body>
 <script src="script.js"></script>
 </html>
