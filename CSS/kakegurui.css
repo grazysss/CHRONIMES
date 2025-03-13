@@ -110,6 +110,11 @@ nav p {
     display: block;
 }
 
+.temp a {
+    text-decoration: none;
+    color: white;
+}
+
 main {
     margin: auto;
     width: 880px;
